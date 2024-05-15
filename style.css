@@ -202,3 +202,44 @@ textarea {
 .checkbox-wrapper input:checked + label::before {
   background: var(--fc-primary);
 }
+
+.col-3 {
+  display: flex;
+  gap: 10px;
+}
+
+.col-3 > div:nth-child(1) {
+  margin-right: 22px;
+}
+
+.col-3 > div:nth-child(2),
+.col-3 > div:nth-child(3) {
+  width: 140px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 62px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #f67669;
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff4c38;
+}
+
+input:invalid {
+  border: 1px solid red;
+}

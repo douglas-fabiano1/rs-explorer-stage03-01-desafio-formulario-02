@@ -56,17 +56,45 @@
             </div>
             <div class="input-wrapper">
               <label for="mentorship-feedback"> Feedback sobre o mentor </label>
-              <textarea id="mentorship-feedback"></textarea>
+              <textarea
+                id="mentorship-feedback"
+                required
+                minlength="20"
+              ></textarea>
             </div>
             <div class="checkbox-wrapper">
               <input type="checkbox" id="no-doubt" />
               <label for="no-doubt"
                 >Todas as minhas dúvidas foram esclarecidas durante a
-                mentoria</label
+                mentoria.</label
               >
             </div>
           </div>
         </fieldset>
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Agendado Próxima Mentoria</legend>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-next-mentorship-date"
+                  >Data <span>(DD/MM/AAAA)</span></label
+                >
+                <input type="date" id="event-next-mentorship-date" required />
+              </div>
+              <div class="input-wrapper">
+                <label for="event-next-mentorship-begin">Das</label>
+                <input type="time" id="event-next-mentorship-begin" required />
+              </div>
+              <div class="input-wrapper">
+                <label for="event-next-mentorship-end">Até</label>
+                <input type="time" id="event-next-mentorship-end" required />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <footer>
+          <button type="submit" form="my-form">Salvar</button>
+        </footer>
       </form>
     </div>
   </body>
